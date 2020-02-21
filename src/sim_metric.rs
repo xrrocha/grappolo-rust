@@ -5,4 +5,4 @@
 pub type Similarity = f64;
 
 /// Measure the similarity between two values of a given type.
-pub type SimilarityMetric<T> = Fn(&T, &T) -> Similarity;
+pub type SimilarityMetric<T> = dyn Fn(&T, &T) -> Similarity;

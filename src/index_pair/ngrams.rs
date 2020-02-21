@@ -10,7 +10,7 @@ use super::IndexPair;
 #[derive(Debug)]
 pub struct NGramPairs {
     /// The collected index pairs.
-    pairs: Vec<(IndexPair)>,
+    pairs: Vec<IndexPair>,
     /// The current iteration index.
     current_index: Index,
 }

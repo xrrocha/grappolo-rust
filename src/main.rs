@@ -99,6 +99,6 @@ fn show_clusters() {
                 .expect("Error writing cluster file");
         }
         out.flush()
-            .expect("Error flushing luster file");
+            .expect("Error flushing cluster file");
     }
 }

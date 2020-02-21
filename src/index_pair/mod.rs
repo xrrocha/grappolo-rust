@@ -9,4 +9,4 @@ pub mod cartesian;
 pub type IndexPair = (Index, Index);
 
 /// Iterator over index pairs to be considered for clustering together.
-pub type IndexPairIterator = Iterator<Item=IndexPair> + Send;
+pub type IndexPairIterator = dyn Iterator<Item=IndexPair> + Send;
